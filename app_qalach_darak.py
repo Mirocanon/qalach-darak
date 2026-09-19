@@ -538,6 +538,8 @@ ft.run(
     main,
     view=ft.AppView.WEB_BROWSER,
     assets_dir=os.path.dirname(__file__),
+    host=os.environ.get("HOST", "0.0.0.0"),
     port=int(os.environ.get("PORT", "8550")),
 )
+
 
